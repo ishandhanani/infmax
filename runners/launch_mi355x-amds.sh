@@ -142,7 +142,7 @@ else
     FRAMEWORK_SUFFIX=$([[ "$FRAMEWORK" == "atom" ]] && printf '_atom' || printf '')
 
     PARTITION="compute"
-    SQUASH_FILE="/it-share/squash/$(echo "$IMAGE" | sed 's/[\/:@#]/_/g').sqsh"
+    SQUASH_FILE="/var/lib/squash/$(echo "$IMAGE" | sed 's/[\/:@#]/_/g').sqsh"
 
     if [[ "$MODEL" == "amd/DeepSeek-R1-0528-MXFP4-Preview" || "$MODEL" == "deepseek-ai/DeepSeek-R1-0528" ]]; then
         if [[ "$OSL" == "8192" ]]; then
